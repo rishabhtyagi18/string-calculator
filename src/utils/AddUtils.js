@@ -15,7 +15,7 @@ export function add(numbers) {
 
     const negatives = numArray.filter(num => num < 0);
     if (negatives.length > 0) {
-        throw new Error(`negative numbers not allowed ${negatives.join(",")}`);
+        throw new Error(`Negative numbers not allowed ${negatives.join(",")}`);
     }
 
     return numArray.reduce((sum, num) => sum + num, 0);
